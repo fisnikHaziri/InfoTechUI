@@ -1,0 +1,21 @@
+The navbar will display all the subjects and on select the asaide will apear
+on the asaide there wil be the title of the subject and underneath it will be buttons containing the title of all the lessons that belong to that subject
+
+On click the button will update the main component to display the title of the lesson and the context such as key points deep explenations and mayby other references 
+
+^^^I left of here i have to do the Aside now and add the Bright colored bookmark idea for displaying the title's
+
+The buttons will be fully colored and will look like bookmarks, the color of the button will be based on a randomly generated bright color
+the uncovered lessons will be grayed out so will the uncovered subjects and will not have any functionality to them (Except mayby a popup modal that lets the user know that that is gated behind Teacher premmision) 
+
+The project expects a User object from the backend that will contain booleans such as "HTML", "JavaScript".... based on which the UI will know wether to give premmision to view zed subject or not
+
+example of how the userOBJ for covered subjects should look like:
+    const UserFisnik = {
+      HTML: true,
+      JavaScript: true,
+      React: false,
+      CS: true,
+      NetMVC: true,
+      NetAPI: false,
+    }
