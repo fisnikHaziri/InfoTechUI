@@ -1,13 +1,20 @@
 import React from 'react'
 import Li from './Li'
 
+interface Subject {
+	Title: string
+	lessons: string[]
+}
+
 interface User {
-	HTML: boolean
-	JavaScript: boolean
-	React: boolean
-	CS: boolean
-	NetMVC: boolean
-	NetAPI: boolean
+	Subjects: {
+		HTML: Subject
+		JavaScript: Subject
+		React: Subject
+		CS: Subject
+		NetMVC: Subject
+		NetAPI: Subject
+	}
 }
 
 interface NavBarProps {
@@ -20,12 +27,11 @@ const NavBar: React.FC<NavBarProps> = ({ title, user }) => {
 		<nav>
 			<h1 className="font-semibold text-white hover:cursor-pointer">{title}</h1>
 			<ul>
-				<Li covered={user.HTML}>HTML</Li>
-				<Li covered={user.JavaScript}>JavaScript</Li>
-				<Li covered={user.React}>React</Li>
-				<Li covered={user.CS}>C#</Li>
-				<Li covered={user.NetMVC}>MVC</Li>
-				<Li covered={user.NetAPI}>API</Li>
+				{Object.entries(user.Subjects).map(([key, value]) => (
+					<Li key={key} covered={value.Title !== ''}>
+						{key}
+					</Li>
+				))}
 			</ul>
 		</nav>
 	)

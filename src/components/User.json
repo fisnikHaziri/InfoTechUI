@@ -1,0 +1,28 @@
+{
+	"Subjects": {
+		"HTML": {
+			"Title": "HTML",
+			"lessons": []
+		},
+		"JavaScript": {
+			"Title": "JavaScript",
+			"lessons": []
+		},
+		"React": {
+			"Title": "",
+			"lessons": []
+		},
+		"CS": {
+			"Title": "CS",
+			"lessons": []
+		},
+		"NetMVC": {
+			"Title": "NetMVC",
+			"lessons": []
+		},
+		"NetAPI": {
+			"Title": "",
+			"lessons": []
+		}
+	}
+}

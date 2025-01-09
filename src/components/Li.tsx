@@ -24,17 +24,19 @@ const Li: React.FC<LiProps> = ({ covered, children }) => {
 			<a
 				onClick={
 					covered
-						? () =>
+						? () => {
 								setSelectedTopic(
 									selectedTopic.subject !== childrenString
 										? childrenString
 										: '',
-									'lesson 1'
+									selectedTopic.lessons
+									// ^^Need to make this accept the User lessons
 								)
+						  }
 						: undefined
 				}
 			>
-				{children}
+				{childrenString}
 			</a>
 		</li>
 	)

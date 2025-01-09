@@ -11,11 +11,34 @@ the uncovered lessons will be grayed out so will the uncovered subjects and will
 The project expects a User object from the backend that will contain booleans such as "HTML", "JavaScript".... based on which the UI will know wether to give premmision to view zed subject or not
 
 example of how the userOBJ for covered subjects should look like:
-    const UserFisnik = {
-      HTML: true,
-      JavaScript: true,
-      React: false,
-      CS: true,
-      NetMVC: true,
-      NetAPI: false,
-    }
+{
+  
+  >--Other user info--<
+
+	"Subjects": {
+		"HTML": {
+			"Title": "HTML",
+			"lessons": []
+		},
+		"JavaScript": {
+			"Title": "JavaScript",
+			"lessons": []
+		},
+		"React": {
+			"Title": "",
+			"lessons": []
+		},
+		"CS": {
+			"Title": "CS",
+			"lessons": []
+		},
+		"NetMVC": {
+			"Title": "NetMVC",
+			"lessons": []
+		},
+		"NetAPI": {
+			"Title": "",
+			"lessons": []
+		}
+	}
+}
