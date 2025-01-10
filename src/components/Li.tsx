@@ -42,7 +42,15 @@ const Li: React.FC<LiProps> = ({ covered, children }) => {
 	}, [childrenString, covered])
 
 	return (
-		<li className={covered ? lessonStyling.covered : lessonStyling.notCovered}>
+		<li
+			className={
+				covered
+					? childrenString === selectedTopic.subject
+						? `${covered} bg-white text-black font-semibold hover:cursor-pointer`
+						: lessonStyling.covered
+					: lessonStyling.notCovered
+			}
+		>
 			<a
 				onClick={
 					covered

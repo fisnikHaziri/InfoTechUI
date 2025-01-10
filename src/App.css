@@ -40,7 +40,7 @@ nav a {
 nav a.active {
 	background-color: #4caf50;
 	color: white;
-}
+} /*Need to actualy make this class work and fix it*/
 
 main aside {
 	padding: 20px;
@@ -57,14 +57,15 @@ main aside ul button {
 	border-bottom-right-radius: 3px;
 	width: 16.5rem;
 	padding-left: 3.5rem;
+	padding-right: 0.5rem;
+	overflow: hidden;
 	text-align: left;
 	position: relative;
 	&:hover {
 		cursor: pointer;
-		scale: 1.1;
+		transform: translateY(-7px) translateX(7px);
 	}
 	&::after {
-		scale: 1.1;
 		content: '';
 		background-color: red;
 		background: linear-gradient(to right top, #38bdf8 50%, transparent 50%);

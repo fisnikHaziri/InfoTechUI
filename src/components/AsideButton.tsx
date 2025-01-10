@@ -17,7 +17,7 @@ const AsideButton: React.FC<AsideButtonProps> = ({
 	backgroundColor,
 	onLessonChange,
 }) => {
-	const btnStyling = `btnCoveredLessonStyling `
+	const btnStyling = `btnCoveredLessonStyling mb-2`
 
 	return (
 		<button
@@ -25,7 +25,7 @@ const AsideButton: React.FC<AsideButtonProps> = ({
 			className={btnStyling}
 			style={{ backgroundColor }}
 		>
-			<li>{lesson.title}</li>
+			<li className="text-white text-[17px] font-semibold">{lesson.title}</li>
 		</button>
 	)
 }
