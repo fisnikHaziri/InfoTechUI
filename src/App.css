@@ -86,4 +86,5 @@ main div#FocusedLesson {
 main div#FocusedLesson #TheIconicHr {
 	height: 2px;
 	background: linear-gradient(to right, transparent, black, black, transparent);
+	margin-top: 1rem;
 }
