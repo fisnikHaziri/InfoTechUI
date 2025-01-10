@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import convertChildrenToString from './Utils/convertChildrenToString'
+import { Lesson } from './Utils/Interfaces'
 import returnLessons from './Utils/returnLessons'
 import { useSelectedTopic } from './Utils/SelectedTopicContext'
-
-interface Lesson {
-	title: string
-	keyPoints: string
-	content: string
-}
 
 interface LiProps {
 	children: React.ReactNode

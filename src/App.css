@@ -44,6 +44,7 @@ nav a.active {
 
 main aside {
 	padding: 20px;
+	border: none;
 }
 
 main aside ul button {
@@ -76,4 +77,13 @@ main aside ul button {
 		left: 0;
 		top: 0;
 	}
+}
+
+main div#FocusedLesson {
+	border: none;
+}
+
+main div#FocusedLesson #TheIconicHr {
+	height: 2px;
+	background: linear-gradient(to right, transparent, black, black, transparent);
 }

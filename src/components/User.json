@@ -5,62 +5,66 @@
 			"lessons": [
 				{
 					"title": "Introduction to HTML",
-					"keyPoints": "Pointing things out",
-					"content": "interesting"
+					"keyPoints": [
+						"Pointing things out",
+						"More pointing things out",
+						"third thing"
+					],
+					"content": "Content"
 				},
 				{
 					"title": "Lists",
-					"keyPoints": "More pointing things out",
+					"keyPoints": ["More pointing things out"],
 					"content": "interesting"
 				},
 				{
 					"title": "Tables",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "Forms",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "Introduction to CSS",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "CSS Box Model",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "CSS FlexBox",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "Basic selectors",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "Pseudo-classes",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "Animation @keyframes",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": "Step-by-step instruction to using Bootstrap framework in our project",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				},
 				{
 					"title": " Introduction to Bootstrap CSS framework",
-					"keyPoints": "moreTesting",
+					"keyPoints": ["moreTesting"],
 					"content": "interesting"
 				}
 			]

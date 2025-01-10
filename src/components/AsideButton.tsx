@@ -1,10 +1,5 @@
 import React from 'react'
-
-interface Lesson {
-	title: string
-	keyPoints: string
-	content: string
-}
+import { Lesson } from './Utils/Interfaces'
 
 interface AsideButtonProps {
 	lesson: Lesson

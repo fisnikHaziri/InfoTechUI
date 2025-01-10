@@ -4,18 +4,13 @@ import Aside from './components/Aside'
 import FocusedLesson from './components/FocusedLesson'
 import NavBar from './components/NavBar'
 import User from './components/User.json'
+import { Lesson } from './components/Utils/Interfaces'
 import { useSelectedTopic } from './components/Utils/SelectedTopicContext'
-
-interface Lesson {
-	title: string
-	keyPoints: string
-	content: string
-}
 
 function App() {
 	const [selectedLesson, setSelectedLesson] = useState({
 		title: '',
-		keyPoints: '',
+		keyPoints: [''],
 		content: '',
 	})
 	const { selectedTopic } = useSelectedTopic()
@@ -33,7 +28,7 @@ function App() {
 						onLessonChange={handleLessonChange}
 					/>
 				)}
-				<FocusedLesson lesson={selectedLesson} />
+				{selectedLesson.title && <FocusedLesson lesson={selectedLesson} />}
 			</main>
 		</>
 	)
