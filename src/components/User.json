@@ -5,12 +5,12 @@
 			"lessons": [
 				{
 					"title": "Introduction to HTML",
-					"keyPoints": "moreTesting",
+					"keyPoints": "Pointing things out",
 					"content": "interesting"
 				},
 				{
 					"title": "Lists",
-					"keyPoints": "moreTesting",
+					"keyPoints": "More pointing things out",
 					"content": "interesting"
 				},
 				{
@@ -35,6 +35,31 @@
 				},
 				{
 					"title": "CSS FlexBox",
+					"keyPoints": "moreTesting",
+					"content": "interesting"
+				},
+				{
+					"title": "Basic selectors",
+					"keyPoints": "moreTesting",
+					"content": "interesting"
+				},
+				{
+					"title": "Pseudo-classes",
+					"keyPoints": "moreTesting",
+					"content": "interesting"
+				},
+				{
+					"title": "Animation @keyframes",
+					"keyPoints": "moreTesting",
+					"content": "interesting"
+				},
+				{
+					"title": "Step-by-step instruction to using Bootstrap framework in our project",
+					"keyPoints": "moreTesting",
+					"content": "interesting"
+				},
+				{
+					"title": " Introduction to Bootstrap CSS framework",
 					"keyPoints": "moreTesting",
 					"content": "interesting"
 				}

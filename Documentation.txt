@@ -42,3 +42,6 @@ example of how the userOBJ for covered subjects should look like:
 		}
 	}
 }
+
+
+The user JSON OBJ needs to have another property besides the Subjects, the LessonsCovered property wich will be an array of strings and it will contain the titles of the covered lessons based on wich we will controll weather the user gets to acces that lesson and other stuf such as the styling of the button
