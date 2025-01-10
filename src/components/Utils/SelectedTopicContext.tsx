@@ -1,13 +1,19 @@
 import { createContext, ReactNode, useContext, useState } from 'react'
 
+interface Lessons {
+	title: string
+	keyPoints: string
+	content: string
+}
+
 interface SelectedTopic {
 	subject: string
-	lessons: string[]
+	lessons: Lessons[]
 }
 
 interface SelectedTopicContextType {
 	selectedTopic: SelectedTopic
-	setSelectedTopic: (subject: string, lesson: string[]) => void
+	setSelectedTopic: (subject: string, lessons: Lessons[]) => void
 }
 
 const SelectedTopicContext = createContext<
@@ -26,7 +32,7 @@ export const SelectedTopicProvider: React.FC<SelectedTopicProviderProps> = ({
 		lessons: [],
 	})
 
-	function handleSelectTopic(subject: string, lessons: string[]) {
+	function handleSelectTopic(subject: string, lessons: Lessons[]) {
 		setSelectedTopic({ subject, lessons })
 	}
 

@@ -1,9 +1,15 @@
 import React from 'react'
 import Li from './Li'
 
+interface Lessons {
+	title: string
+	keyPoints: string
+	content: string
+}
+
 interface Subject {
 	Title: string
-	lessons: string[]
+	lessons: Lessons[]
 }
 
 interface User {

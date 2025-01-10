@@ -1,6 +1,13 @@
-import React from 'react'
-import { useSelectedTopic } from './Utils/SelectedTopicContext'
+import React, { useEffect, useState } from 'react'
 import convertChildrenToString from './Utils/convertChildrenToString'
+import returnLessons from './Utils/returnLessons'
+import { useSelectedTopic } from './Utils/SelectedTopicContext'
+
+interface Lesson {
+	title: string
+	keyPoints: string
+	content: string
+}
 
 interface LiProps {
 	children: React.ReactNode
@@ -16,8 +23,23 @@ const lessonStyling = {
 
 const Li: React.FC<LiProps> = ({ covered, children }) => {
 	const { setSelectedTopic, selectedTopic } = useSelectedTopic()
-
+	const [lessons, setLessons] = useState<Lesson[]>([])
 	const childrenString = convertChildrenToString(children)
+
+	useEffect(() => {
+		async function getData() {
+			if (covered) {
+				try {
+					const lessonsData = await returnLessons(childrenString)
+					setLessons(lessonsData)
+				} catch (error) {
+					console.error('Failed to fetch lessons:', error)
+				}
+			}
+		}
+
+		getData()
+	}, [childrenString, covered])
 
 	return (
 		<li className={covered ? lessonStyling.covered : lessonStyling.notCovered}>
@@ -29,8 +51,7 @@ const Li: React.FC<LiProps> = ({ covered, children }) => {
 									selectedTopic.subject !== childrenString
 										? childrenString
 										: '',
-									selectedTopic.lessons
-									// ^^Need to make this accept the User lessons
+									lessons
 								)
 						  }
 						: undefined
