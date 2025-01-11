@@ -22,12 +22,8 @@ function App() {
 		<>
 			<NavBar title="InfoTech" user={User} />
 			<main className="flex">
-				{selectedTopic.subject && (
-					<Aside
-						title={selectedTopic.subject}
-						onLessonChange={handleLessonChange}
-					/>
-				)}
+				{selectedTopic.subject && <Aside onLessonChange={handleLessonChange} />}
+
 				{selectedLesson.title && <FocusedLesson lesson={selectedLesson} />}
 			</main>
 		</>

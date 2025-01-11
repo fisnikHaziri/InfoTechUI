@@ -11,7 +11,7 @@ const FocusedLesson: React.FC<FocusedLessonProps> = ({ lesson }) => {
 			id="FocusedLesson"
 			className="w-screen flex flex-col p-5 bg-stone-200 min-h-screen"
 		>
-			<h1 className="text-[40px] font-semibold pl-4">{lesson.title}</h1>
+			<h1 className="text-[40px] font-semibold pl-4 ">{lesson.title}</h1>
 			<hr id="TheIconicHr" />
 			{lesson.keyPoints.length > 0 && (
 				<section className="bg-stone-300 p-5 my-6 border rounded-[7px]">
