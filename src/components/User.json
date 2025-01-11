@@ -1,4 +1,13 @@
 {
+	"CoveredTopics": {
+		"Subjects": ["HTML", "JavaScript"],
+		"Lessons": [
+			"Introduction to HTML",
+			"Lists",
+			"Tables",
+			"Introduction to JavaScript"
+		]
+	},
 	"Subjects": {
 		"HTML": {
 			"Title": "HTML",
@@ -83,7 +92,7 @@
 			]
 		},
 		"React": {
-			"Title": "",
+			"Title": "React",
 			"lessons": [
 				{
 					"title": "Introduction to React",
@@ -194,7 +203,7 @@
 			]
 		},
 		"NetAPI": {
-			"Title": "",
+			"Title": "NetAPI",
 			"lessons": [
 				{
 					"title": "Introduction to .NET API",

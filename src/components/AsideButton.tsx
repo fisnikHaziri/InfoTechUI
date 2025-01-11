@@ -1,4 +1,5 @@
 import React from 'react'
+import User from './User.json'
 import { Lesson } from './Utils/Interfaces'
 
 interface AsideButtonProps {
@@ -12,11 +13,20 @@ const AsideButton: React.FC<AsideButtonProps> = ({
 	backgroundColor,
 	onLessonChange,
 }) => {
+	const coveredLessons = User.CoveredTopics.Lessons
 	const btnStyling = `btnCoveredLessonStyling mb-2`
+
+	if (!coveredLessons.includes(lesson.title)) {
+		backgroundColor = '#808080'
+	}
 
 	return (
 		<button
-			onClick={() => onLessonChange(lesson)}
+			onClick={
+				coveredLessons.includes(lesson.title)
+					? () => onLessonChange(lesson)
+					: undefined
+			}
 			className={btnStyling}
 			style={{ backgroundColor }}
 		>
