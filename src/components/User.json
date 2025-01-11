@@ -16,80 +16,219 @@
 				},
 				{
 					"title": "Lists",
-					"keyPoints": ["More pointing things out"],
-					"content": "interesting"
+					"keyPoints": [
+						"<ul> - defines an unordered list",
+						"<ol> - defines an ordered list",
+						"<li> - defines a list item"
+					],
+					"content": "Lists are used to group related items together. HTML supports ordered lists, unordered lists, and description lists. Ordered lists use numbers, while unordered lists use bullets."
 				},
 				{
 					"title": "Tables",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
+					"keyPoints": [
+						"<table> - defines a table",
+						"<tr> - defines a table row",
+						"<td> - defines a table cell",
+						"<th> - defines a table header"
+					],
+					"content": "Tables are used to display data in a tabular format. They consist of rows and columns, and can include headers, footers, and captions."
 				},
 				{
 					"title": "Forms",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": "Introduction to CSS",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": "CSS Box Model",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": "CSS FlexBox",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": "Basic selectors",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": "Pseudo-classes",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": "Animation @keyframes",
-					"keyPoints": [],
-					"content": "interesting"
-				},
-				{
-					"title": "Step-by-step instruction to using Bootstrap framework in our project",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
-				},
-				{
-					"title": " Introduction to Bootstrap CSS framework",
-					"keyPoints": ["moreTesting"],
-					"content": "interesting"
+					"keyPoints": [
+						"<form> - defines a form",
+						"<input> - defines an input field",
+						"<label> - defines a label for an input field",
+						"<button> - defines a clickable button"
+					],
+					"content": "Forms are used to collect user input. They can include various types of input fields, such as text boxes, radio buttons, checkboxes, and submit buttons."
 				}
 			]
 		},
 		"JavaScript": {
 			"Title": "JavaScript",
-			"lessons": []
+			"lessons": [
+				{
+					"title": "Introduction to JavaScript",
+					"keyPoints": [
+						"JavaScript is a programming language used to create dynamic and interactive content on the web.",
+						"It can be used to manipulate the DOM, handle events, and make asynchronous requests."
+					],
+					"content": "JavaScript is a versatile programming language that allows developers to create dynamic and interactive web applications. It can be used to manipulate the DOM, handle events, and make asynchronous requests to the server."
+				},
+				{
+					"title": "Variables and Data Types",
+					"keyPoints": [
+						"var, let, and const are used to declare variables.",
+						"JavaScript supports various data types, including strings, numbers, booleans, arrays, and objects."
+					],
+					"content": "Variables are used to store data in JavaScript. The var, let, and const keywords are used to declare variables. JavaScript supports various data types, including strings, numbers, booleans, arrays, and objects."
+				},
+				{
+					"title": "Functions",
+					"keyPoints": [
+						"Functions are reusable blocks of code that perform a specific task.",
+						"They can be declared using the function keyword or as arrow functions."
+					],
+					"content": "Functions are reusable blocks of code that perform a specific task. They can be declared using the function keyword or as arrow functions. Functions can accept parameters and return values."
+				},
+				{
+					"title": "DOM Manipulation",
+					"keyPoints": [
+						"The DOM (Document Object Model) represents the structure of a web page.",
+						"JavaScript can be used to manipulate the DOM, such as adding, removing, or modifying elements."
+					],
+					"content": "The DOM (Document Object Model) represents the structure of a web page. JavaScript can be used to manipulate the DOM, such as adding, removing, or modifying elements. This allows developers to create dynamic and interactive web applications."
+				}
+			]
 		},
 		"React": {
 			"Title": "",
-			"lessons": []
+			"lessons": [
+				{
+					"title": "Introduction to React",
+					"keyPoints": [
+						"React is a JavaScript library for building user interfaces.",
+						"It allows developers to create reusable UI components."
+					],
+					"content": "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of their applications. React uses a virtual DOM to efficiently update the UI in response to changes in state."
+				},
+				{
+					"title": "Components",
+					"keyPoints": [
+						"Components are the building blocks of a React application.",
+						"They can be functional or class-based."
+					],
+					"content": "Components are the building blocks of a React application. They can be functional or class-based. Components can accept props and manage their own state. They can also be composed together to create complex UIs."
+				},
+				{
+					"title": "State and Props",
+					"keyPoints": [
+						"State is used to manage the internal state of a component.",
+						"Props are used to pass data from parent to child components."
+					],
+					"content": "State is used to manage the internal state of a component. Props are used to pass data from parent to child components. By using state and props, developers can create dynamic and interactive UIs."
+				},
+				{
+					"title": "Lifecycle Methods",
+					"keyPoints": [
+						"Lifecycle methods are special methods that are called at different stages of a component's lifecycle.",
+						"They can be used to perform actions such as fetching data or cleaning up resources."
+					],
+					"content": "Lifecycle methods are special methods that are called at different stages of a component's lifecycle. They can be used to perform actions such as fetching data or cleaning up resources. Common lifecycle methods include componentDidMount, componentDidUpdate, and componentWillUnmount."
+				}
+			]
 		},
 		"CS": {
 			"Title": "CS",
-			"lessons": []
+			"lessons": [
+				{
+					"title": "Introduction to Computer Science",
+					"keyPoints": [
+						"Computer Science is the study of computers and computational systems.",
+						"It encompasses a wide range of topics, including algorithms, data structures, and software engineering."
+					],
+					"content": "Computer Science is the study of computers and computational systems. It encompasses a wide range of topics, including algorithms, data structures, and software engineering. Computer scientists develop software, design algorithms, and solve complex problems."
+				},
+				{
+					"title": "Algorithms",
+					"keyPoints": [
+						"Algorithms are step-by-step procedures for solving problems.",
+						"They can be used to perform tasks such as sorting, searching, and optimization."
+					],
+					"content": "Algorithms are step-by-step procedures for solving problems. They can be used to perform tasks such as sorting, searching, and optimization. Understanding algorithms is fundamental to computer science and software development."
+				},
+				{
+					"title": "Data Structures",
+					"keyPoints": [
+						"Data structures are ways of organizing and storing data.",
+						"Common data structures include arrays, linked lists, stacks, queues, and trees."
+					],
+					"content": "Data structures are ways of organizing and storing data. Common data structures include arrays, linked lists, stacks, queues, and trees. Choosing the right data structure is important for efficient algorithm implementation."
+				},
+				{
+					"title": "Software Engineering",
+					"keyPoints": [
+						"Software engineering is the application of engineering principles to software development.",
+						"It involves designing, developing, testing, and maintaining software."
+					],
+					"content": "Software engineering is the application of engineering principles to software development. It involves designing, developing, testing, and maintaining software. Software engineers use various methodologies and tools to create high-quality software."
+				}
+			]
 		},
 		"NetMVC": {
 			"Title": "NetMVC",
-			"lessons": []
+			"lessons": [
+				{
+					"title": "Introduction to .NET MVC",
+					"keyPoints": [
+						".NET MVC is a framework for building web applications.",
+						"It follows the Model-View-Controller architectural pattern."
+					],
+					"content": ".NET MVC is a framework for building web applications. It follows the Model-View-Controller architectural pattern, which separates an application into three main components: the model, the view, and the controller. This separation helps manage the complexity of large applications and promotes code reusability."
+				},
+				{
+					"title": "Models",
+					"keyPoints": [
+						"Models represent the data and business logic of an application.",
+						"They are responsible for retrieving and storing data."
+					],
+					"content": "Models represent the data and business logic of an application. They are responsible for retrieving and storing data. In .NET MVC, models are typically implemented as classes that interact with a database."
+				},
+				{
+					"title": "Views",
+					"keyPoints": [
+						"Views are responsible for displaying the user interface.",
+						"They are typically implemented using HTML and Razor syntax."
+					],
+					"content": "Views are responsible for displaying the user interface. They are typically implemented using HTML and Razor syntax. Views receive data from the controller and render it to the user."
+				},
+				{
+					"title": "Controllers",
+					"keyPoints": [
+						"Controllers handle user input and interactions.",
+						"They are responsible for processing requests and returning responses."
+					],
+					"content": "Controllers handle user input and interactions. They are responsible for processing requests and returning responses. In .NET MVC, controllers are implemented as classes that inherit from the Controller base class."
+				}
+			]
 		},
 		"NetAPI": {
 			"Title": "",
-			"lessons": []
+			"lessons": [
+				{
+					"title": "Introduction to .NET API",
+					"keyPoints": [
+						".NET API is a framework for building web APIs.",
+						"It allows developers to create RESTful services."
+					],
+					"content": ".NET API is a framework for building web APIs. It allows developers to create RESTful services that can be consumed by various clients, such as web browsers, mobile devices, and other applications. .NET API supports various data formats, including JSON and XML."
+				},
+				{
+					"title": "Routing",
+					"keyPoints": [
+						"Routing is the process of mapping URLs to actions.",
+						"In .NET API, routes are defined in the Startup.cs file."
+					],
+					"content": "Routing is the process of mapping URLs to actions. In .NET API, routes are defined in the Startup.cs file. Routing allows developers to define how requests are handled and which actions are executed."
+				},
+				{
+					"title": "Controllers",
+					"keyPoints": [
+						"Controllers handle HTTP requests and return responses.",
+						"They are responsible for implementing the API endpoints."
+					],
+					"content": "Controllers handle HTTP requests and return responses. They are responsible for implementing the API endpoints. In .NET API, controllers are implemented as classes that inherit from the ControllerBase class."
+				},
+				{
+					"title": "Middleware",
+					"keyPoints": [
+						"Middleware is software that processes requests and responses.",
+						"In .NET API, middleware is configured in the Startup.cs file."
+					],
+					"content": "Middleware is software that processes requests and responses. In .NET API, middleware is configured in the Startup.cs file. Middleware can be used to perform tasks such as authentication, logging, and error handling."
+				}
+			]
 		}
 	}
 }
