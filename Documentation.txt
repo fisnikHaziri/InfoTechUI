@@ -47,3 +47,5 @@ example of how the userOBJ for covered subjects should look like:
 The user JSON OBJ needs to have another property besides the Subjects, the LessonsCovered property wich will be an array of strings and it will contain the titles of the covered lessons based on wich we will controll weather the user gets to acces that lesson and other stuf such as the styling of the button
 
 Updated the user property to contain the CoveredTopics object wich will contain all the covered subjects and lessons by that user, also made it so that if a lesson or subject is not in the CoveredTopics of the user it will appear grrayed out, adding the Subject Title or the lesosns title to the users CoveredTopics will enable the user to acces that lesson or subject and will be colored in giving visual feedback
+
+the app will initialy greet the user and prompt him to select a lesson to proceed, the name will be fetched from the User OBJ meaning that the user must input a name to register

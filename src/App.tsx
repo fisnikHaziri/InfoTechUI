@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Aside from './components/Aside'
 import FocusedLesson from './components/FocusedLesson'
+import GreetUser from './components/GreetUser'
 import NavBar from './components/NavBar'
 import User from './components/User.json'
 import { Lesson } from './components/Utils/Interfaces'
@@ -23,6 +24,9 @@ function App() {
 			<NavBar title="InfoTech" user={User} />
 			<main className="flex">
 				{selectedTopic.subject && <Aside onLessonChange={handleLessonChange} />}
+				{!selectedLesson.title && (
+					<GreetUser name={User.UserCredentials.Name} />
+				)}
 
 				{selectedLesson.title && <FocusedLesson lesson={selectedLesson} />}
 			</main>

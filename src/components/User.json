@@ -1,4 +1,9 @@
 {
+	"UserCredentials": {
+		"Name": "Fisnik",
+		"LastName": "Haziri",
+		"Email": "haziriciki04@gmail.com"
+	},
 	"CoveredTopics": {
 		"Subjects": ["HTML", "JavaScript"],
 		"Lessons": [
